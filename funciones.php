@@ -19,8 +19,8 @@ Class Functions_Aux{
         return round($acum/($indice_final-$indice_inicial+1), 2);
     }
 
-
-    public function promedio_valores_preguntas_est($array_valores1, $indice_inicial, $indice_final, $tipo_evaluacion){
+/*
+    public function promedio_valores_preguntas_est($array_valores1, $tipo_evaluacion){
         if($tipo_evaluacion === 'estud'){
              $dict = array(
                 "Totalmente de acuerdo" => 5,
@@ -32,10 +32,11 @@ Class Functions_Aux{
                 
         }
         $acum = 0;
-        for ($i=$indice_inicial; $i<$indice_final+1; $i++){
+        for ($i=0; $i<$array_valores1+1; $i++){
             $acum += $dict[$array_valores1['PREGUNTA'.+$i]];
         }
-        return round($acum/($indice_final-$indice_inicial+1), 2);
+        return round($acum/2);
     }
-    
+    */
 }
+?>
