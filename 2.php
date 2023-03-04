@@ -24,13 +24,27 @@ $query = "SELECT * SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo
  
 $result = $conn->query("SELECT * FROM `e_estud` ");
 
-$contador= 1;
+$contador = count(mysqli_fetch_assoc($result));
 
-while($contador <= $row = mysqli_fetch_assoc($result)){
+$contador1 = count(mysqli_fetch_array($result));
 
-   echo $contador . "<br>" . $row["PREGUNTA".$contador] . "<br /><br/>";
+echo $contador . "<br /><br/>";
+echo $contador1 ."<br /><br/>";
 
-    $contador = $contador + 1;
+$row = mysqli_fetch_array($result);
+
+$row1 = mysqli_fetch_assoc($result);
+
+for ($i = 1 ; $i < $contador; $i++){
+
+   echo $i . "<br>" . $row["PREGUNTA".$i] . "<br /><br/>";
+
+  /* for ($j = 1 ; $j < $contador1; $j++){
+
+    echo $j . "<br>" . $row1["PREGUNTA".$j] . "<br /><br/>";
+
+}
+    */
 
 }
 
