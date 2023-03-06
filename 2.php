@@ -20,6 +20,412 @@ if ($conn->connect_error) {
     die("Falló la conexión a la base de datos: " . $conn->connect_error);
 }
 
+
+//Se hace la consulta en la base de datos
+$sql = "UPDATE e_estud SET PREGUNTA1 = CASE
+        WHEN PREGUNTA1 = 'a. Totalmente de acuerdo' THEN 5
+        WHEN PREGUNTA1 = 'b. De acuerdo' THEN 4
+        WHEN PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo' THEN 3
+        WHEN PREGUNTA1 = 'd. En desacuerdo' THEN 2
+        WHEN PREGUNTA1 = 'e. Totalmente de desacuerdo' THEN 1
+        
+    END";
+/*
+$sql2 = "UPDATE e_estud SET PREGUNTA2 = CASE
+        WHEN PREGUNTA2 = 'a. Totalmente de acuerdo' THEN 5
+        WHEN PREGUNTA2 = 'b. De acuerdo' THEN 4
+        WHEN PREGUNTA2 = 'c. Ni de acuerdo ni en desacuerdo' THEN 3
+        WHEN PREGUNTA2 = 'd. En desacuerdo' THEN 2
+        WHEN PREGUNTA2 = 'e. Totalmente de desacuerdo' THEN 1
+        
+    END";
+
+$sql3 = "UPDATE e_estud SET PREGUNTA3 = CASE
+        WHEN PREGUNTA3 = 'a. Totalmente de acuerdo' THEN 5
+        WHEN PREGUNTA3 = 'b. De acuerdo' THEN 4
+        WHEN PREGUNTA3 = 'c. Ni de acuerdo ni en desacuerdo' THEN 3
+        WHEN PREGUNTA3 = 'd. En desacuerdo' THEN 2
+        WHEN PREGUNTA3 = 'e. Totalmente de desacuerdo' THEN 1
+        
+    END";
+    */
+
+$sql4 = "UPDATE e_estud SET PREGUNTA4 = CASE
+WHEN PREGUNTA4 = 'a. Totalmente de acuerdo' THEN 5
+WHEN PREGUNTA4 = 'b. De acuerdo' THEN 4
+WHEN PREGUNTA4 = 'c. Ni de acuerdo ni en desacuerdo' THEN 3
+WHEN PREGUNTA4 = 'd. En desacuerdo' THEN 2
+WHEN PREGUNTA4 = 'e. Totalmente de desacuerdo' THEN 1
+
+END";
+
+$sql5 = "UPDATE e_estud SET PREGUNTA5 = CASE
+        WHEN PREGUNTA5 = 'a. Totalmente de acuerdo' THEN 5
+        WHEN PREGUNTA5 = 'b. De acuerdo' THEN 4
+        WHEN PREGUNTA5 = 'c. Ni de acuerdo ni en desacuerdo' THEN 3
+        WHEN PREGUNTA5 = 'd. En desacuerdo' THEN 2
+        WHEN PREGUNTA5 = 'e. Totalmente de desacuerdo' THEN 1
+        
+    END";
+
+$sql6 = "UPDATE e_estud SET PREGUNTA6 = CASE
+WHEN PREGUNTA6 = 'Totalmente de acuerdo' THEN 5
+WHEN PREGUNTA6 = 'De acuerdo' THEN 4
+WHEN PREGUNTA6 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+WHEN PREGUNTA6 = 'En desacuerdo' THEN 2
+WHEN PREGUNTA6 = 'Totalmente de desacuerdo' THEN 1
+
+END";
+
+$sql7 = "UPDATE e_estud SET PREGUNTA7 = CASE
+        WHEN PREGUNTA7 = 'Totalmente de acuerdo' THEN 5
+        WHEN PREGUNTA7 = 'De acuerdo' THEN 4
+        WHEN PREGUNTA7 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+        WHEN PREGUNTA7 = 'En desacuerdo' THEN 2
+        WHEN PREGUNTA7 = 'Totalmente de desacuerdo' THEN 1
+        
+    END";
+
+$sql8 = "UPDATE e_estud SET PREGUNTA8 = CASE
+WHEN PREGUNTA8 = 'Totalmente de acuerdo' THEN 5
+WHEN PREGUNTA8 = 'De acuerdo' THEN 4
+WHEN PREGUNTA8 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+WHEN PREGUNTA8 = 'En desacuerdo' THEN 2
+WHEN PREGUNTA8 = 'Totalmente de desacuerdo' THEN 1
+
+END";
+
+$sql9 = "UPDATE e_estud SET PREGUNTA9 = CASE
+        WHEN PREGUNTA9 = 'Totalmente de acuerdo' THEN 5
+        WHEN PREGUNTA9 = 'De acuerdo' THEN 4
+        WHEN PREGUNTA9 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+        WHEN PREGUNTA9 = 'En desacuerdo' THEN 2
+        WHEN PREGUNTA9 = 'Totalmente de desacuerdo' THEN 1
+        
+    END";
+
+$sql10 = "UPDATE e_estud SET PREGUNTA10 = CASE
+WHEN PREGUNTA10 = 'Totalmente de acuerdo' THEN 5
+WHEN PREGUNTA10 = 'De acuerdo' THEN 4
+WHEN PREGUNTA10 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+WHEN PREGUNTA10= 'En desacuerdo' THEN 2
+WHEN PREGUNTA10 = 'Totalmente de desacuerdo' THEN 1
+
+END";
+
+$sql11 = "UPDATE e_estud SET PREGUNTA11 = CASE
+        WHEN PREGUNTA11 = 'Totalmente de acuerdo' THEN 5
+        WHEN PREGUNTA11 = 'De acuerdo' THEN 4
+        WHEN PREGUNTA11 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+        WHEN PREGUNTA11 = 'En desacuerdo' THEN 2
+        WHEN PREGUNTA11 = 'Totalmente de desacuerdo' THEN 1
+        
+    END";
+
+$sql12 = "UPDATE e_estud SET PREGUNTA12 = CASE
+WHEN PREGUNTA12 = 'Totalmente de acuerdo' THEN 5
+WHEN PREGUNTA12 = 'De acuerdo' THEN 4
+WHEN PREGUNTA12 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+WHEN PREGUNTA12 = 'En desacuerdo' THEN 2
+WHEN PREGUNTA12 = 'Totalmente de desacuerdo' THEN 1
+
+END";
+
+$sql13 = "UPDATE e_estud SET PREGUNTA13 = CASE
+        WHEN PREGUNTA13 = 'Totalmente de acuerdo' THEN 5
+        WHEN PREGUNTA13 = 'De acuerdo' THEN 4
+        WHEN PREGUNTA13 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+        WHEN PREGUNTA13 = 'En desacuerdo' THEN 2
+        WHEN PREGUNTA13 = 'Totalmente de desacuerdo' THEN 1
+        
+    END";
+
+$sql14 = "UPDATE e_estud SET PREGUNTA14 = CASE
+WHEN PREGUNTA14 = 'Totalmente de acuerdo' THEN 5
+WHEN PREGUNTA14 = 'De acuerdo' THEN 4
+WHEN PREGUNTA14 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+WHEN PREGUNTA14 = 'En desacuerdo' THEN 2
+WHEN PREGUNTA14 = 'Totalmente de desacuerdo' THEN 1
+
+END";
+
+$sql15 = "UPDATE e_estud SET PREGUNTA15 = CASE
+        WHEN PREGUNTA15 = 'Totalmente de acuerdo' THEN 5
+        WHEN PREGUNTA15 = 'De acuerdo' THEN 4
+        WHEN PREGUNTA15 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+        WHEN PREGUNTA15 = 'En desacuerdo' THEN 2
+        WHEN PREGUNTA15 = 'Totalmente de desacuerdo' THEN 1
+        
+    END";
+
+$sql16 = "UPDATE e_estud SET PREGUNTA16 = CASE
+WHEN PREGUNTA16 = 'Totalmente de acuerdo' THEN 5
+WHEN PREGUNTA16 = 'De acuerdo' THEN 4
+WHEN PREGUNTA16 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+WHEN PREGUNTA16 = 'En desacuerdo' THEN 2
+WHEN PREGUNTA16 = 'Totalmente de desacuerdo' THEN 1
+
+END";
+
+$sql17 = "UPDATE e_estud SET PREGUNTA17 = CASE
+        WHEN PREGUNTA17 = 'Totalmente de acuerdo' THEN 5
+        WHEN PREGUNTA17 = 'De acuerdo' THEN 4
+        WHEN PREGUNTA17 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+        WHEN PREGUNTA17 = 'En desacuerdo' THEN 2
+        WHEN PREGUNTA17 = 'Totalmente de desacuerdo' THEN 1
+        
+    END";
+
+$sql18 = "UPDATE e_estud SET PREGUNTA18 = CASE
+WHEN PREGUNTA18 = 'Totalmente de acuerdo' THEN 5
+WHEN PREGUNTA18 = 'De acuerdo' THEN 4
+WHEN PREGUNTA18 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+WHEN PREGUNTA18 = 'En desacuerdo' THEN 2
+WHEN PREGUNTA18 = 'Totalmente de desacuerdo' THEN 1
+
+END";
+
+$sql19 = "UPDATE e_estud SET PREGUNTA19 = CASE
+        WHEN PREGUNTA19 = 'Totalmente de acuerdo' THEN 5
+        WHEN PREGUNTA19 = 'De acuerdo' THEN 4
+        WHEN PREGUNTA19 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+        WHEN PREGUNTA19 = 'En desacuerdo' THEN 2
+        WHEN PREGUNTA19 = 'Totalmente de desacuerdo' THEN 1
+        
+    END";
+
+$sql20 = "UPDATE e_estud SET PREGUNTA20 = CASE
+WHEN PREGUNTA20 = 'Totalmente de acuerdo' THEN 5
+WHEN PREGUNTA20 = 'De acuerdo' THEN 4
+WHEN PREGUNTA20 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+WHEN PREGUNTA20 = 'En desacuerdo' THEN 2
+WHEN PREGUNTA20 = 'Totalmente de desacuerdo' THEN 1
+
+END";
+
+$sql21 = "UPDATE e_estud SET PREGUNTA21 = CASE
+        WHEN PREGUNTA21 = 'Totalmente de acuerdo' THEN 5
+        WHEN PREGUNTA21 = 'De acuerdo' THEN 4
+        WHEN PREGUNTA21 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+        WHEN PREGUNTA21 = 'En desacuerdo' THEN 2
+        WHEN PREGUNTA21 = 'Totalmente de desacuerdo' THEN 1
+        
+    END";
+
+$sql22 = "UPDATE e_estud SET PREGUNTA22 = CASE
+WHEN PREGUNTA22 = 'Totalmente de acuerdo' THEN 5
+WHEN PREGUNTA22 = 'De acuerdo' THEN 4
+WHEN PREGUNTA22 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+WHEN PREGUNTA22 = 'En desacuerdo' THEN 2
+WHEN PREGUNTA22 = 'Totalmente de desacuerdo' THEN 1
+
+END";
+
+$sql23 = "UPDATE e_estud SET PREGUNTA23 = CASE
+        WHEN PREGUNTA23 = 'Totalmente de acuerdo' THEN 5
+        WHEN PREGUNTA23 = 'De acuerdo' THEN 4
+        WHEN PREGUNTA23 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+        WHEN PREGUNTA23 = 'En desacuerdo' THEN 2
+        WHEN PREGUNTA23 = 'Totalmente de desacuerdo' THEN 1
+        
+    END";
+
+$sql24 = "UPDATE e_estud SET PREGUNTA24 = CASE
+WHEN PREGUNTA24 = 'Totalmente de acuerdo' THEN 5
+WHEN PREGUNTA24 = 'De acuerdo' THEN 4
+WHEN PREGUNTA24 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+WHEN PREGUNTA24 = 'En desacuerdo' THEN 2
+WHEN PREGUNTA24 = 'Totalmente de desacuerdo' THEN 1
+
+END";
+
+$sql25 = "UPDATE e_estud SET PREGUNTA25 = CASE
+        WHEN PREGUNTA25 = 'Totalmente de acuerdo' THEN 5
+        WHEN PREGUNTA25 = 'De acuerdo' THEN 4
+        WHEN PREGUNTA25 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+        WHEN PREGUNTA25 = 'En desacuerdo' THEN 2
+        WHEN PREGUNTA25 = 'Totalmente de desacuerdo' THEN 1
+        
+    END";
+
+$sql26 = "UPDATE e_estud SET PREGUNTA26 = CASE
+WHEN PREGUNTA26 = 'Totalmente de acuerdo' THEN 5
+WHEN PREGUNTA26 = 'De acuerdo' THEN 4
+WHEN PREGUNTA26 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+WHEN PREGUNTA26 = 'En desacuerdo' THEN 2
+WHEN PREGUNTA26 = 'Totalmente de desacuerdo' THEN 1
+
+END";
+
+$sql27 = "UPDATE e_estud SET PREGUNTA27 = CASE
+        WHEN PREGUNTA27 = 'Totalmente de acuerdo' THEN 5
+        WHEN PREGUNTA27 = 'De acuerdo' THEN 4
+        WHEN PREGUNTA27 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+        WHEN PREGUNTA27 = 'En desacuerdo' THEN 2
+        WHEN PREGUNTA27 = 'Totalmente de desacuerdo' THEN 1
+        
+    END";
+
+$sql28 = "UPDATE e_estud SET PREGUNTA28 = CASE
+WHEN PREGUNTA28 = 'Totalmente de acuerdo' THEN 5
+WHEN PREGUNTA28 = 'De acuerdo' THEN 4
+WHEN PREGUNTA28 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+WHEN PREGUNTA28 = 'En desacuerdo' THEN 2
+WHEN PREGUNTA28 = 'Totalmente de desacuerdo' THEN 1
+
+END";
+
+$sql29 = "UPDATE e_estud SET PREGUNTA29 = CASE
+        WHEN PREGUNTA29 = 'Totalmente de acuerdo' THEN 5
+        WHEN PREGUNTA29 = 'De acuerdo' THEN 4
+        WHEN PREGUNTA29 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+        WHEN PREGUNTA29 = 'En desacuerdo' THEN 2
+        WHEN PREGUNTA29 = 'Totalmente de desacuerdo' THEN 1
+        
+    END";
+
+$sql30 = "UPDATE e_estud SET PREGUNTA30 = CASE
+WHEN PREGUNTA30 = 'Totalmente de acuerdo' THEN 5
+WHEN PREGUNTA30 = 'De acuerdo' THEN 4
+WHEN PREGUNTA30 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+WHEN PREGUNTA30 = 'En desacuerdo' THEN 2
+WHEN PREGUNTA30 = 'Totalmente de desacuerdo' THEN 1
+
+END";
+
+$sql31 = "UPDATE e_estud SET PREGUNTA31 = CASE
+        WHEN PREGUNTA31 = 'Totalmente de acuerdo' THEN 5
+        WHEN PREGUNTA31 = 'De acuerdo' THEN 4
+        WHEN PREGUNTA31 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+        WHEN PREGUNTA31 = 'En desacuerdo' THEN 2
+        WHEN PREGUNTA31 = 'Totalmente de desacuerdo' THEN 1
+        
+    END";
+
+$sql32 = "UPDATE e_estud SET PREGUNTA32 = CASE
+WHEN PREGUNTA32 = 'Totalmente de acuerdo' THEN 5
+WHEN PREGUNTA32 = 'De acuerdo' THEN 4
+WHEN PREGUNTA32 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+WHEN PREGUNTA32 = 'En desacuerdo' THEN 2
+WHEN PREGUNTA32 = 'Totalmente de desacuerdo' THEN 1
+
+END";
+
+$sql33 = "UPDATE e_estud SET PREGUNTA33 = CASE
+        WHEN PREGUNTA33 = 'Totalmente de acuerdo' THEN 5
+        WHEN PREGUNTA33 = 'De acuerdo' THEN 4
+        WHEN PREGUNTA33 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+        WHEN PREGUNTA33 = 'En desacuerdo' THEN 2
+        WHEN PREGUNTA33 = 'Totalmente de desacuerdo' THEN 1
+        
+    END";
+
+$sql34 = "UPDATE e_estud SET PREGUNTA34 = CASE
+WHEN PREGUNTA34 = 'Totalmente de acuerdo' THEN 5
+WHEN PREGUNTA34 = 'De acuerdo' THEN 4
+WHEN PREGUNTA34 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+WHEN PREGUNTA34 = 'En desacuerdo' THEN 2
+WHEN PREGUNTA34 = 'Totalmente de desacuerdo' THEN 1
+
+END";
+
+$sql35 = "UPDATE e_estud SET PREGUNTA35 = CASE
+        WHEN PREGUNTA35 = 'Totalmente de acuerdo' THEN 5
+        WHEN PREGUNTA35 = 'De acuerdo' THEN 4
+        WHEN PREGUNTA35 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+        WHEN PREGUNTA35 = 'En desacuerdo' THEN 2
+        WHEN PREGUNTA35 = 'Totalmente de desacuerdo' THEN 1
+        
+    END";
+
+$sql36 = "UPDATE e_estud SET PREGUNTA36 = CASE
+WHEN PREGUNTA36 = 'Totalmente de acuerdo' THEN 5
+WHEN PREGUNTA36 = 'De acuerdo' THEN 4
+WHEN PREGUNTA36 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+WHEN PREGUNTA36 = 'En desacuerdo' THEN 2
+WHEN PREGUNTA36 = 'Totalmente de desacuerdo' THEN 1
+
+END";
+
+$sql37 = "UPDATE e_estud SET PREGUNTA37 = CASE
+        WHEN PREGUNTA37 = 'Totalmente de acuerdo' THEN 5
+        WHEN PREGUNTA37 = 'De acuerdo' THEN 4
+        WHEN PREGUNTA37 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+        WHEN PREGUNTA37 = 'En desacuerdo' THEN 2
+        WHEN PREGUNTA37 = 'Totalmente de desacuerdo' THEN 1
+        
+    END";
+
+$sql38 = "UPDATE e_estud SET PREGUNTA38 = CASE
+WHEN PREGUNTA38 = 'Totalmente de acuerdo' THEN 5
+WHEN PREGUNTA38 = 'De acuerdo' THEN 4
+WHEN PREGUNTA38 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+WHEN PREGUNTA38 = 'En desacuerdo' THEN 2
+WHEN PREGUNTA38 = 'Totalmente de desacuerdo' THEN 1
+
+END";
+
+$sql39 = "UPDATE e_estud SET PREGUNTA39 = CASE
+        WHEN PREGUNTA39 = 'Totalmente de acuerdo' THEN 5
+        WHEN PREGUNTA39 = 'De acuerdo' THEN 4
+        WHEN PREGUNTA39 = 'Ni de acuerdo ni en desacuerdo' THEN 3
+        WHEN PREGUNTA39 = 'En desacuerdo' THEN 2
+        WHEN PREGUNTA39 = 'Totalmente de desacuerdo' THEN 1
+        
+    END";
+
+
+
+$resultado = mysqli_query($conn, $sql);
+//$resultado2 = mysqli_query($conn, $sql2);
+//$resultado3 = mysqli_query($conn, $sql3);
+$resultado4 = mysqli_query($conn, $sql4);
+$resultado5 = mysqli_query($conn, $sql5);
+$resultado6 = mysqli_query($conn, $sql6);
+$resultado7 = mysqli_query($conn, $sql7);
+$resultado8 = mysqli_query($conn, $sql8);
+$resultado9 = mysqli_query($conn, $sql9);
+$resultado10 = mysqli_query($conn, $sql10);
+$resultado11 = mysqli_query($conn, $sql11);
+$resultado12 = mysqli_query($conn, $sql12);
+$resultado13 = mysqli_query($conn, $sql13);
+$resultado14 = mysqli_query($conn, $sql14);
+$resultado15 = mysqli_query($conn, $sql15);
+$resultado16 = mysqli_query($conn, $sql16);
+$resultado17 = mysqli_query($conn, $sql17);
+$resultado18 = mysqli_query($conn, $sql18);
+$resultado19 = mysqli_query($conn, $sql19);
+$resultado20 = mysqli_query($conn, $sql20);
+$resultado21 = mysqli_query($conn, $sql21);
+$resultado22 = mysqli_query($conn, $sql22);
+$resultado23 = mysqli_query($conn, $sql23);
+$resultado24 = mysqli_query($conn, $sql24);
+$resultado25 = mysqli_query($conn, $sql25);
+$resultado26 = mysqli_query($conn, $sql26);
+$resultado27 = mysqli_query($conn, $sql27);
+$resultado28 = mysqli_query($conn, $sql28);
+$resultado29 = mysqli_query($conn, $sql29);
+$resultado30 = mysqli_query($conn, $sql30);
+$resultado31 = mysqli_query($conn, $sql31);
+$resultado32 = mysqli_query($conn, $sql32);
+$resultado33 = mysqli_query($conn, $sql33);
+$resultado34 = mysqli_query($conn, $sql34);
+$resultado35 = mysqli_query($conn, $sql35);
+$resultado36 = mysqli_query($conn, $sql36);
+$resultado37 = mysqli_query($conn, $sql37);
+$resultado38 = mysqli_query($conn, $sql38);
+$resultado39 = mysqli_query($conn, $sql39);
+
+
+header('Location: 1.php');
+exit;
+
+
+
+
+
+
+/*
 $query = "SELECT * SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
  
 $result = $conn->query("SELECT * FROM `e_estud` ");
@@ -39,12 +445,12 @@ for ($i = 1 ; $i < $contador; $i++){
 
    echo $i . "<br>" . $row["PREGUNTA".$i] . "<br /><br/>";
 
-  /* for ($j = 1 ; $j < $contador1; $j++){
+   for ($j = 1 ; $j < $contador1; $j++){
 
     echo $j . "<br>" . $row1["PREGUNTA".$j] . "<br /><br/>";
 
 }
-    */
+    
 
 }
 
@@ -59,540 +465,108 @@ if($resultado){
 
 '<br>';
 
-
+*/
 
 /*
-//Se hace la consulta en la base de datos
-$query1 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query1_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query1_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query1_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query1_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
 
-$query2 = "UPDATE e_estud SET PREGUNTA2 = 5 WHERE PREGUNTA2 = 'a. Totalmente de acuerdo'";
-$query2_1 = "UPDATE e_estud SET PREGUNTA2 = 4 WHERE PREGUNTA2 = 'b. De acuerdo'";
-$query2_2 = "UPDATE e_estud SET PREGUNTA2 = 3 WHERE PREGUNTA2 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query2_3 = "UPDATE e_estud SET PREGUNTA2 = 2 WHERE PREGUNTA2 = 'd. En desacuerdo'";
-$query2_4 = "UPDATE e_estud SET PREGUNTA2 = 1 WHERE PREGUNTA2 = 'e. Totalmente en desacuerdo'";
-
-$query3 = "UPDATE e_estud SET PREGUNTA3 = 5 WHERE PREGUNTA3 = 'a. Totalmente de acuerdo'";
-$query3_1 = "UPDATE e_estud SET PREGUNTA3 = 4 WHERE PREGUNTA3 = 'b. De acuerdo'";
-$query3_2 = "UPDATE e_estud SET PREGUNTA3 = 3 WHERE PREGUNTA3= 'c. Ni de acuerdo ni en desacuerdo'";
-$query3_3 = "UPDATE e_estud SET PREGUNTA3 = 2 WHERE PREGUNTA3 = 'd. En desacuerdo'";
-$query3_4 = "UPDATE e_estud SET PREGUNTA3 = 1 WHERE PREGUNTA3 = 'e. Totalmente en desacuerdo'";
-
-$query4 = "UPDATE e_estud SET PREGUNTA4 = 5 WHERE PREGUNTA4 = 'a. Totalmente de acuerdo'";
-$query4_1 = "UPDATE e_estud SET PREGUNTA4 = 4 WHERE PREGUNTA4 = 'b. De acuerdo'";
-$query4_2 = "UPDATE e_estud SET PREGUNTA4 = 3 WHERE PREGUNTA4 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query4_3 = "UPDATE e_estud SET PREGUNTA4 = 2 WHERE PREGUNTA4 = 'd. En desacuerdo'";
-$query4_4 = "UPDATE e_estud SET PREGUNTA4 = 1 WHERE PREGUNTA4 = 'e. Totalmente en desacuerdo'";
-
-$query5 = "UPDATE e_estud SET PREGUNTA5 = 5 WHERE PREGUNTA5 = 'a. Totalmente de acuerdo'";
-$query5_1 = "UPDATE e_estud SET PREGUNTA5 = 4 WHERE PREGUNTA5 = 'b. De acuerdo'";
-$query5_2 = "UPDATE e_estud SET PREGUNTA5 = 3 WHERE PREGUNTA5 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query5_3 = "UPDATE e_estud SET PREGUNTA5 = 2 WHERE PREGUNTA5 = 'd. En desacuerdo'";
-$query5_4 = "UPDATE e_estud SET PREGUNTA5 = 1 WHERE PREGUNTA5 = 'e. Totalmente en desacuerdo'";
-
-$query6 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query6_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query6_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query6_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query6_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query7 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query7_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query7_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query7_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query7_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query8 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query8_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query8_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query8_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query8_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query9 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query9_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query9_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query9_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query9_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query10 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query10_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query10_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query10_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query10_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query11 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query11_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query11_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query11_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query11_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query12 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query12_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query12_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query12_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query12_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query13 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query13_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query13_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query13_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query13_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query14 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query14_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query14_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query14_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query14_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query15 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query15_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query15_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query15_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query15_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query16 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query16_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query16_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query16_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query16_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query17 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query17_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query17_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query17_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query17_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query18 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query18_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query18_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query18_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query18_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query19 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query19_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query19_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query19_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query19_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query20 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query20_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query20_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query20_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query20_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query21 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query21_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query21_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query21_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query21_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query22 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query22_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query22_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query22_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query22_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query23 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query23_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query23_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query23_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query23_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query24 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query24_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query24_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query24_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query24_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query25 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query25_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query25_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query25_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query25_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query26 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query26_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query26_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query26_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query26_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query27 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query27_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query27_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query27_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query27_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query28 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query28_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query28_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query28_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query28_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query29 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query29_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query29_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query29_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query29_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query30 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query30_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query30_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query30_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query30_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query31 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query31_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query31_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query31_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query31_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query32 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query32_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query32_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query32_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query32_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query33 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query33_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query33_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query33_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query33_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query34 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query34_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query34_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query34_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query34_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query34 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query34_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query34_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query34_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query34_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query35 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query35_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query35_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query35_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query35_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query36 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query36_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query36_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query36_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query36_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query37 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query37_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query37_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query37_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query37_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query38 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query38_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query38_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query38_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query38_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$query39 = "UPDATE e_estud SET PREGUNTA1 = 5 WHERE PREGUNTA1 = 'a. Totalmente de acuerdo'";
-$query39_1 = "UPDATE e_estud SET PREGUNTA1 = 4 WHERE PREGUNTA1 = 'b. De acuerdo'";
-$query39_2 = "UPDATE e_estud SET PREGUNTA1 = 3 WHERE PREGUNTA1 = 'c. Ni de acuerdo ni en desacuerdo'";
-$query39_3 = "UPDATE e_estud SET PREGUNTA1 = 2 WHERE PREGUNTA1 = 'd. En desacuerdo'";
-$query39_4 = "UPDATE e_estud SET PREGUNTA1 = 1 WHERE PREGUNTA1 = 'e. Totalmente en desacuerdo'";
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado2 = mysqli_query($conn, $querypregunta1);
-$resultado21 = mysqli_query($conn,$querypregunta1_1);
-$resultado22 = mysqli_query($conn,$querypregunta1_2);
-$resultado23 = mysqli_query($conn,$querypregunta1_3);
-$resultado24 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado3 = mysqli_query($conn, $querypregunta1);
-$resultado31 = mysqli_query($conn,$querypregunta1_1);
-$resultado32 = mysqli_query($conn,$querypregunta1_2);
-$resultado33 = mysqli_query($conn,$querypregunta1_3);
-$resultado34 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado4 = mysqli_query($conn, $querypregunta1);
-$resultado41 = mysqli_query($conn,$querypregunta1_1);
-$resultado42 = mysqli_query($conn,$querypregunta1_2);
-$resultado43 = mysqli_query($conn,$querypregunta1_3);
-$resultado44 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado5 = mysqli_query($conn, $querypregunta1);
-$resultado51 = mysqli_query($conn,$querypregunta1_1);
-$resultado52 = mysqli_query($conn,$querypregunta1_2);
-$resultado53 = mysqli_query($conn,$querypregunta1_3);
-$resultado54 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado6 = mysqli_query($conn, $querypregunta1);
-$resultado61 = mysqli_query($conn,$querypregunta1_1);
-$resultado62 = mysqli_query($conn,$querypregunta1_2);
-$resultado63 = mysqli_query($conn,$querypregunta1_3);
-$resultado64 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado7 = mysqli_query($conn, $querypregunta1);
-$resultado71 = mysqli_query($conn,$querypregunta1_1);
-$resultado72 = mysqli_query($conn,$querypregunta1_2);
-$resultado73 = mysqli_query($conn,$querypregunta1_3);
-$resultado74 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado8 = mysqli_query($conn, $querypregunta1);
-$resultado81 = mysqli_query($conn,$querypregunta1_1);
-$resultado82 = mysqli_query($conn,$querypregunta1_2);
-$resultado83 = mysqli_query($conn,$querypregunta1_3);
-$resultado84 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado9 = mysqli_query($conn, $querypregunta1);
-$resultado91 = mysqli_query($conn,$querypregunta1_1);
-$resultado92 = mysqli_query($conn,$querypregunta1_2);
-$resultado93 = mysqli_query($conn,$querypregunta1_3);
-$resultado94 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado10 = mysqli_query($conn, $querypregunta1);
-$resultado101 = mysqli_query($conn,$querypregunta1_1);
-$resultado102 = mysqli_query($conn,$querypregunta1_2);
-$resultado103 = mysqli_query($conn,$querypregunta1_3);
-$resultado104 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado11 = mysqli_query($conn, $querypregunta1);
-$resultado111 = mysqli_query($conn,$querypregunta1_1);
-$resultado112 = mysqli_query($conn,$querypregunta1_2);
-$resultado113 = mysqli_query($conn,$querypregunta1_3);
-$resultado114 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
-
-$resultado = mysqli_query($conn, $querypregunta1);
-$resultado1 = mysqli_query($conn,$querypregunta1_1);
-$resultado2 = mysqli_query($conn,$querypregunta1_2);
-$resultado3 = mysqli_query($conn,$querypregunta1_3);
-$resultado4 = mysqli_query($conn,$querypregunta1_4);
+// Conectar a la base de datos MySQL
+$conexion = mysqli_connect("localhost", "root", "", "evaluacion_docente1");
+
+// Actualizar los valores cuantitativos a cualitativos
+$sql = "UPDATE e_estud SET PREGUNTA5 = CASE
+        WHEN PREGUNTA5 = 'a. Totalmente de acuerdo' THEN 5
+        WHEN PREGUNTA5 = 'b. De acuerdo' THEN 4
+        WHEN PREGUNTA5 = 'c. Ni de acuerdo ni en desacuerdo' THEN 3
+        WHEN PREGUNTA1 = 'd. En desacuerdo' THEN 2
+        WHEN PREGUNTA1 = 'e. Totalmente de desacuerdo' THEN 1
+        ELSE 'Fuera de rango'
+    END";
+
+$resultado = mysqli_query($conexion, $sql);
+
+// Comprobar si la actualización se realizó correctamente
+if ($resultado) {
+    echo "Los valores se actualizaron correctamente.";
+} else {
+    echo "Se produjo un error al actualizar los valores.";
+}
+
+// Cerrar la conexión a la base de datos MySQL
+mysqli_close($conexion);
 
 */
 
 
+/*
+// Conexión a la base de datos MySQL
+$mysqli = new mysqli("localhost", "root", "", "evaluacion_docente1");
 
+// Verificar la conexión
+if ($mysqli->connect_errno) {
+    echo "Falló la conexión a MySQL: " . $mysqli->connect_error;
+}
+
+// Nombre de la tabla
+$tabla = "e_estud";
+
+// Obtener el número de filas y columnas de la tabla
+$query = "SELECT COUNT(*) AS filas, COUNT(*) AS columnas FROM $tabla";
+if ($result = mysqli_query($mysqli, $query)) {
+    $row = mysqli_fetch_array($result);
+    $filas = $row['filas'];
+    $columnas = $row['columnas'];
+    mysqli_free_result($result);
+}
+
+// Recorrer todas las filas y columnas de la tabla
+for ($i = 0; $i < $filas; $i++) {
+    for ($j = 0; $j < $columnas; $j++) {
+        // Consulta para obtener los datos de la celda en la fila $i y la columna $j
+        $query = "SELECT celda FROM $tabla WHERE fila = $i AND columna = $j";
+        
+        if ($result = mysqli_query($mysqli, $query)) {
+            $row = mysqli_fetch_array($result);
+            $celda = $row['celda'];
+            mysqli_free_result($result);
+        }
+
+        // Imprimir el valor de la celda
+        echo $celda . " ";
+    }
+    echo "<br>";
+}
+
+// Cerrar la conexión a MySQL
+$mysqli->close();
+*/
 
 /*
-if($resultado){
 
-    echo 'Actualizado';
+// Conexión a la base de datos MySQL
+$mysqli = new mysqli("localhost", "root", "", "evaluacion_docente1");
 
-}else{
-
-    echo 'No actualizado';
+// Verificar la conexión
+if ($mysqli->connect_errno) {
+    echo "Falló la conexión a MySQL: " . $mysqli->connect_error;
 }
 
-'<br>';
+// Consulta para obtener los datos de la tabla
+$query = "SELECT * FROM e_estud";
 
-if($resultado1){
+// Ejecutar la consulta
+if ($result = mysqli_query($mysqli, $query)) {
+    // Recorrer los resultados
+    while ($row = mysqli_fetch_array($result)) {
+        // Acceder a los datos de cada fila
+        echo $row['PREGUNTA1'] . " " . $row['PREGUNTA2'] . "<br>" . $row['PREGUNTA3'] . "<br>" . $row['PREGUNTA4'] . "<br>" . $row['PREGUNTA5'] . "<br>" . $row['PREGUNTA6'] . "<br>" . $row['PREGUNTA7'] . "<br>" . $row['PREGUNTA8'] . "<br>" . $row['PREGUNTA9'] . "<br>" . $row['PREGUNTA10'] . "<br>" . $row['PREGUNTA11'] . "<br>" . $row['PREGUNTA12'] . "<br>" . $row['PREGUNTA13'] . "<br>" . $row['PREGUNTA14'] . "<br>" . $row['PREGUNTA15'] . "<br>" . $row['PREGUNTA16'] . "<br>" . $row['PREGUNTA17'] . "<br>" . $row['PREGUNTA18'] . "<br>" . $row['PREGUNTA19'] . "<br>" . $row['PREGUNTA20'] . "<br>" . $row['PREGUNTA21'] . "<br>" . $row['PREGUNTA22'] . "<br>" . $row['PREGUNTA23'] . "<br>" . $row['PREGUNTA24'] . "<br>" . $row['PREGUNTA25'] . "<br>" . $row['PREGUNTA26'] . "<br>" . $row['PREGUNTA27'] . "<br>" . $row['PREGUNTA28'] . "<br>" . $row['PREGUNTA29'] . "<br>" . $row['PREGUNTA30'] . "<br>" . $row['PREGUNTA31'] . "<br>" . $row['PREGUNTA32'] . "<br>" . $row['PREGUNTA33'] . "<br>" . $row['PREGUNTA34'] . "<br>" . $row['PREGUNTA35'] . "<br>" . $row['PREGUNTA36'] . "<br>" . $row['PREGUNTA37'] . "<br>" . $row['PREGUNTA38'] . "<br>" . $row['PREGUNTA39'] . "<br>" . "-----------------";
+    }
 
-    echo 'Actualizado1';
-
-}else{
-
-    echo 'No actualizado1';
+    // Liberar el conjunto de resultados
+    mysqli_free_result($result);
 }
 
-'<br>';
+// Cerrar la conexión a MySQL
+$mysqli->close();
 
-if($resultado2){
-
-    echo 'Actualizado2';
-
-}else{
-
-    echo 'No actualizado2';
-}
-
-'<br>';
-
-if($resultado3){
-
-    echo 'Actualizado3';
-
-}else{
-
-    echo 'No actualizado3';
-}
-'<br>';
-
-if($resultado4){
-
-    echo 'Actualizado4';
-
-}else{
-
-    echo 'No actualizado4';
-}
 */
-?>
+

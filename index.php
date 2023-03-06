@@ -37,3 +37,14 @@ echo "El promedio de los datos es: " . $promedio;
 // Cerrar la conexión a la base de datos
 $conn->close();
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi página web</title>
+</head>
+<body>
+  <button><a href="2.php">Ir a página 2</a></button>
+  <button><a href="1.php">Ir a página 1</a></button>
+</body>
+</html>
